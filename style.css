@@ -97,13 +97,22 @@ body {
 }
 .faq-answer {
   color: hsl(240, 6%, 50%);
-  display: none;
+  max-height: 0;
+  overflow: hidden;
   font-size: 1em;
   margin: 0;
 }
+.faq-input:checked ~ .faq-question > .caret-icon {
+  transform: rotate(180deg);
+  background-position: center 0.6em;
+  transition: ease-in-out 0.3s;
+}
 .faq-input:checked ~ .faq-answer {
   display: block;
+  max-height: 100vh;
+  transition: ease-in-out 1s;
 }
 .faq-input:checked ~ .faq-question {
   font-weight: bold;
+  transition: ease-in-out 0.3s;
 }
