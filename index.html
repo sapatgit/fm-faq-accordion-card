@@ -4,37 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
-
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
-
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
-
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
-
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+  <section class="card">
+    <div class="image-row">
+      <div class="card-image">
+        <div class="img-box"></div>
+        <div class="img-woman"></div>
+        <div class="img-pattern"></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h1>FAQ</h1>
+      <div>
+        <input type="radio" name="faq" class="faq-input" id="team-size">
+        <label for="team-size" class="faq-question">
+          <span>How many team members can I invite?</span>
+          <div class="caret-icon" class="faq-question"></div>
+        </label>
+        <p class="faq-answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
+          team members for the Premium plan.</p>
+      </div>
+      <hr>
+  
+      <div>
+        <input type="radio" name="faq" class="faq-input" id="file-size" checked>
+        <label for="file-size" class="faq-question">
+          <span>What is the maximum file upload size?</span>
+          <div class="caret-icon" class="faq-question"></div>
+        </label>
+        <p class="faq-answer">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+      </div>
+      <hr>
+  
+      <div>
+        <input type="radio" name="faq" class="faq-input" id="pwd-reset">
+        <label for="pwd-reset" class="faq-question">
+          <span>How do I reset my password?</span>
+          <div class="caret-icon" class="faq-question"></div>
+        </label>
+        <p class="faq-answer">Click “Forgot password” from the login page or “Change password” from your profile page.
+          A reset link will be emailed to you.</p>
+      </div>
+      <hr>
+  
+      <div>
+        <input type="radio" name="faq" class="faq-input" id="cancel">
+        <label for="cancel" class="faq-question">
+          <span>Can I cancel my subscription?</span>
+          <div class="caret-icon" class="faq-question"></div>
+        </label>
+        <p class="faq-answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+      </div>
+      <hr>
+  
+      <div>
+        <input type="radio" name="faq" class="faq-input" id="support">
+        <label for="support" class="faq-question">
+          <span>Do you provide additional support?</span>
+          <div class="caret-icon" class="faq-question"></div>
+        </label>
+        <p class="faq-answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      </div>
+      <hr>
+    </div>
+  </section>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</label>. 
+    Coded by <a href="https://github.com/sapgit97" target="_blank">Saptarshi</label>.
   </div>
 </body>
 </html>

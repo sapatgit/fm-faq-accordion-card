@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.8rem;
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%))
+    no-repeat center center fixed;
+  background-size: cover;
+}
+.attribution {
+  font-size: 0.75em;
+  text-align: center;
+  color: white;
+}
+.attribution a:active {
+  color: yellow;
+}
+.attribution a {
+  color: yellow;
+}
+.card {
+  display: flex;
+  margin: 150px 25px 85px 25px;
+  flex-flow: column wrap;
+  flex-basis: 327px;
+  flex-grow: 0;
+  min-height: 118px;
+  background-color: white;
+  border-radius: 21px;
+  box-shadow: 0 5px 25px 0 hsla(0, 0%, 17%, 0.4);
+}
+.card-image {
+  height: 100px;
+  flex-basis: 300px;
+  flex-grow: 0;
+}
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-woman {
+  background: url("./images/illustration-woman-online-mobile.svg") no-repeat;
+  min-height: 180px;
+  z-index: 2;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 109px;
+}
+.img-pattern {
+  background: url("./images/bg-pattern-mobile.svg") no-repeat;
+  min-height: 106px;
+  z-index: 1;
+  position: relative;
+  left: 29px;
+  right: 0;
+  bottom: 182px;
+}
+.card-body {
+  padding: 36px 23px;
+}
+.card-body h1 {
+  margin: 0;
+  font-size: 3em;
+  text-align: center;
+  color: hsl(238, 29%, 16%);
+}
+.faq-question {
+  font-size: 1em;
+  font-weight: normal;
+  color: hsl(237, 12%, 33%);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faq-question:hover {
+  color: hsl(14, 88%, 65%);
+}
+.caret-icon {
+  background: url("./images/icon-arrow-down.svg") no-repeat center 0.4em;
+  flex-basis: 1em;
+}
+.faq-input {
+  display: none;
+}
+.card-body hr {
+  height: 1px;
+  background-color: hsl(0, 0%, 83%);
+  border: none;
+  margin: 1em 0;
+}
+.faq-answer {
+  color: hsl(240, 6%, 50%);
+  display: none;
+  font-size: 1em;
+  margin: 0;
+}
+.faq-input:checked ~ .faq-answer {
+  display: block;
+}
+.faq-input:checked ~ .faq-question {
+  font-weight: bold;
+}
