@@ -10,6 +10,8 @@ body {
   background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%))
     no-repeat center center fixed;
   background-size: cover;
+  display: grid;
+  place-items: center;
 }
 .attribution {
   font-size: 0.75em;
@@ -25,41 +27,45 @@ body {
 .card {
   display: flex;
   margin: 150px 25px 85px 25px;
-  flex-flow: column wrap;
-  flex-basis: 327px;
-  flex-grow: 0;
+  flex-direction: column;
+  min-width: 327px;
   min-height: 118px;
   background-color: white;
   border-radius: 21px;
   box-shadow: 0 5px 25px 0 hsla(0, 0%, 17%, 0.4);
 }
 .card-image {
+  position: relative;
   height: 100px;
-  flex-basis: 300px;
-  flex-grow: 0;
 }
-.image-row {
+.image-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .img-woman {
   background: url("./images/illustration-woman-online-mobile.svg") no-repeat;
-  min-height: 180px;
+  width: 266px;
+  height: 196px;
   z-index: 2;
-  position: relative;
+  margin: auto;
+  position: absolute;
+  top: -120px;
   left: 0;
-  right: 0;
-  bottom: 109px;
+  right: 13px;
+  bottom: 0;
 }
 .img-pattern {
   background: url("./images/bg-pattern-mobile.svg") no-repeat;
-  min-height: 106px;
+  width: 240px;
+  height: 104px;
+  margin: auto;
   z-index: 1;
-  position: relative;
-  left: 29px;
+  position: absolute;
+  top: 0;
+  left: 13px;
   right: 0;
-  bottom: 182px;
+  bottom: 0;
 }
 .card-body {
   padding: 36px 23px;
@@ -110,9 +116,57 @@ body {
 .faq-input:checked ~ .faq-answer {
   display: block;
   max-height: 100vh;
-  transition: ease-in-out 1s;
+  transition: ease-in-out 0.8s;
 }
 .faq-input:checked ~ .faq-question {
   font-weight: bold;
   transition: ease-in-out 0.3s;
+}
+
+@media screen and (min-width: 1030px) {
+  .card {
+    max-width: 920px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 45px;
+  }
+  .card-image {
+    min-height: 510px;
+  }
+  .card-body {
+    padding: 70px 90px;
+    flex-basis: 532px;
+    flex-shrink: 0;
+  }
+  .img-woman {
+    background: url("./images/illustration-woman-online-desktop.svg") no-repeat;
+    height: 472px;
+    width: 472px;
+    top: 100px;
+    left: -84px;
+    right: 0;
+    bottom: 0;
+    clip-path: inset(0 0 0 84px);
+  }
+  .img-pattern {
+    background: url("./images/bg-pattern-desktop.svg") no-repeat;
+    height: 966px;
+    width: 970px;
+    top: -135px;
+    left: -578px;
+    right: 0;
+    bottom: 0;
+    clip-path: inset(294px 0 160px 578px);
+  }
+  .img-box {
+    background: url("./images/illustration-box-desktop.svg") no-repeat;
+    height: 191px;
+    width: 184px;
+    position: relative;
+    z-index: 3;
+    top: 200px;
+    left: -95px;
+    right: 0;
+    bottom: 0;
+  }
 }
