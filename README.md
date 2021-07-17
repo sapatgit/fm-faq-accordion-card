@@ -15,8 +15,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -33,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/sapgit97/fm-faq-accordion-card)
-- Live Site URL: [Add live site URL here](https://sapgit97.github.io/fm-faq-accordion-card/)
+- Solution URL: [Go to Solution](https://github.com/sapatgit/fm-faq-accordion-card)
+- Live Site URL: [Go to Live Site](https://sapatgit.github.io/fm-faq-accordion-card/)
 
 ## My process
 
@@ -62,5 +60,5 @@ Played a lot with relative and absolute positioning. Also, learned how to clip i
 
 ## Author
 
-- Frontend Mentor - [@sapgit97](https://www.frontendmentor.io/profile/sapgit97)
-- Twitter - [@poisoncoreSM](https://www.twitter.com/poisoncoreSM)
+- Frontend Mentor - [@sapatgit](https://www.frontendmentor.io/profile/sapatgit)
+- Twitter - [@ItsSaptarshiM](https://www.twitter.com/ItsSaptarshiM)
