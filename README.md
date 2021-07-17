@@ -60,5 +60,5 @@ Played a lot with relative and absolute positioning. Also, learned how to clip i
 
 ## Author
 
-- Frontend Mentor - [@sapatgit](https://www.frontendmentor.io/profile/sapatgit)
+- Frontend Mentor - [@sapgit97](https://www.frontendmentor.io/profile/sapgit97)
 - Twitter - [@ItsSaptarshiM](https://www.twitter.com/ItsSaptarshiM)
